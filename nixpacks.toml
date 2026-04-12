@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["fontconfig", "freetype"]
+
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt",
+  "mkdir -p /usr/share/fonts/truetype/crosextra"
+]
